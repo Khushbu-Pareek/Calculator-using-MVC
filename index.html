@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/calculator.css">
+<head>
+    <title></title>
+
+</head>
+
+<body>
+<div id="calculator1"></div>
+<div id="calculator2"></div>
+
+
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/views/ButtonView.js"></script>
+<script type="text/javascript" src="js/models/ButtonModel.js"></script>
+<script type="text/javascript" src="js/controllers/ButtonController.js"></script>
+<script type="text/javascript" src="js/views/DisplayView.js"></script>
+<script type="text/javascript" src="js/models/DisplayModel.js"></script>
+<script type="text/javascript" src="js/controllers/DisplayController.js"></script>
+<script type="text/javascript" src="js/views/CalculatorView.js"></script>
+<script type="text/javascript" src="js/models/CalculatorModel.js"></script>
+<script type="text/javascript" src="js/controllers/CalculatorController.js"></script>
+<script type="text/javascript" src="js/views/NumericButtonView.js"></script>
+<script type="text/javascript" src="js/models/NumericButtonModel.js"></script>
+<script type="text/javascript" src="js/controllers/NumericButtonController.js"></script>
+<script type="text/javascript" src="js/views/OperatorButtonView.js"></script>
+<script type="text/javascript" src="js/models/OperatorButtonModel.js"></script>
+<script type="text/javascript" src="js/controllers/OperatorButtonController.js"></script>
+<script>
+
+    var cal1 = new calculatorController();
+    document.getElementById('calculator1').appendChild(cal1.render());
+    var cal2 = new calculatorController();
+    document.getElementById('calculator2').appendChild(cal2.render());
+
+</script>
+</body>
+
+</html>
